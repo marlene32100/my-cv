@@ -88,7 +88,7 @@ header {
 
 .menuitem a i {
     padding-top: 22px;
-    display: block; /*makes icon appear on a single line on its own"*/
+    display: block; /*makes icon appear on a single line on its own*/
     color: #fafafa;
     font-size: 26px;
 }
