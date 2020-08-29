@@ -46,6 +46,13 @@
     background-color: #e74c3c;
 }
 
+.bg-color-conferences {
+    background-color: #f4f4f4;
+}
+
+.bg-color-groups {
+    background-color: #ffffff;
+}
 /*---------------------------------------------------------------Special margins/paddings/text*/
 
 h1,
