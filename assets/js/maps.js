@@ -1,5 +1,5 @@
     function initMap() {
-        var Belluno = {lat: 46.140022, lng: 12.216701};
+        
             var map = new google.maps.Map(document.getElementById("map"), {
                 zoom: 3,
                 center: {
@@ -25,4 +25,26 @@
 
             var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+
+            var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Belluno</h1>'+
+      '<div id="bodyContent">'+
+      '<a href="https://it.wikipedia.org/wiki/Belluno#/"><img src="https://it.wikipedia.org/wiki/Belluno#/media/File:Belluno-Schiara.jpg" alt= "Belluno"></a>'+
+      '</div>'+
+      '</div>';
+
+        var infowindow = new google.maps.InfoWindow({
+            content: contentString
+        });
+
+        var marker = new google.maps.Marker({
+            position: {lat: 46.140022, lng: 12.216701},
+            map: map,
+            title: 'Belluno'
+        });
+        marker.addListener('click', function () {
+            infowindow.open(map, marker);
+        });
       }
