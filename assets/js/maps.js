@@ -37,7 +37,8 @@
 function initMap() {
     var map = new google.maps.Map(document.getElementById('map'), {
               zoom: 3,
-              center: {lat: 46.140022, lng:12.216701}
+              center: {lat: 46.140022, lng:12.216701},
+              mapTypeId: "satellite"
     });
 
     var locations= [
